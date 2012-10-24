@@ -5,9 +5,20 @@
 </head>
 
 <body>
-
+    <script type="text/template" id="foo_template">
+      <label><%= search_label %></label>
+      <input type="text" id="search_input" />
+      <input type="button" id="search_button" value="Search" />  
+    </script>
     <p>Hello {{ name }}!</p>
+    <div id = "foo_container"><p>Hi</p> </div>
 
+
+    <script src="static/script/lib/jquery.min.js"></script>
+    <script src="static/script/lib/underscore-min.js"></script>
+    <script src="static/script/lib/backbone-min.js"></script>
+    <script src="static/script/hello_view.js"></script>
+    <script src="static/script/hello_model.js"></script>
 
 </body>
 
