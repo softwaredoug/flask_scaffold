@@ -16,14 +16,8 @@ var CounterModel = Backbone.Model.extend({
     incr: function()
     {
         // Increment the counter 
-        value = counter.get("value");
-        counter.set({value: value+1});
+        value = this.get("value");
+        this.set({value: value+1});
     }
 });
-
-counter = new CounterModel();
-counter.incr();
-counter.save();
-counter.incr();
-counter.save();
 

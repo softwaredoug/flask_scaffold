@@ -5,20 +5,21 @@
 </head>
 
 <body>
-    <script type="text/template" id="foo_template">
-      <label><%= search_label %></label>
-      <input type="text" id="search_input" />
-      <input type="button" id="search_button" value="Search" />  
+    <script type="text/template" id="counter_template">
+      <label>Set Counter</label>
+      <input type="text" id="counter_id" value="<%=counter_id%>"/>
+      <input type="button" id="increment_button" value="Incr" />
+      <div id = "count">Count  <span id = "counter_value"><%= counter_value %></span></div>
     </script>
     <p>Hello {{ name }}!</p>
-    <div id = "foo_container"><p>Hi</p> </div>
+    <div id = "counter_container"><p>Hi</p> </div>
 
 
     <script src="static/script/lib/jquery.min.js"></script>
     <script src="static/script/lib/underscore-min.js"></script>
     <script src="static/script/lib/backbone-min.js"></script>
-    <script src="static/script/hello_view.js"></script>
     <script src="static/script/hello_model.js"></script>
+    <script src="static/script/hello_view.js"></script>
 
 </body>
 

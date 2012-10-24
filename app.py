@@ -16,6 +16,9 @@ def counter(counterId):
 
     print "Processing counter!"
 
+    print str(flask.request)
+    print "Text: %s" % flask.request.data
+
     # POST -- set the counter to the passed in value
     if flask.request.method == "POST":
         counts[counterId] = flask.request.json["value"]
